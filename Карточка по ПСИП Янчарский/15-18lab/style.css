@@ -1,0 +1,29 @@
+form{
+    border: 1px dashed black;
+    padding: 25px;
+    max-width: 350px;
+    margin: 50px;
+}
+.form__title{
+    display: flex;
+}
+.input_block{
+    margin-bottom: 15px;
+}
+.name{
+    margin-left: 80px;
+}
+.mail{
+    margin-left: 44px;
+}
+.day{
+    margin-left: 7px;
+    width: 25px;
+}
+.year{
+    width: 40px;
+}
+
+form button{
+    margin-left: 140px;
+}
