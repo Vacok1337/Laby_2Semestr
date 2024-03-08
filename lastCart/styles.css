@@ -1,0 +1,46 @@
+body{
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+form{
+    background-color: rgb(31, 30, 30);
+    border-radius: 4px;
+}
+.login_block{
+    padding: 4px;
+    margin: 15px;
+}
+
+input{
+    border: 1px solid whitesmoke;
+    border-radius: 4px;
+    padding: 10px 40px;
+    background-color: grey;
+    color: white;
+}
+
+input::placeholder{
+    color: white;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.message_block input{
+    padding: 35px 40px;
+}
+
+.login_block{
+    display: flex;
+    justify-content: end;
+}
+
+button{
+    padding: 5px 10px;
+    background-color: rgb(98, 97, 97);
+    color: white;
+    border-radius: 4px;
+}
