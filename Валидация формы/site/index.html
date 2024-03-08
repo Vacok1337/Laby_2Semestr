@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Валидация форм</title>
+</head>
+<body>
+    <h1>Валидация форм</h1>
+    <div class="formsValidations">
+        <div>
+            <form action="" class="formHTML form">
+                <h2>Через атрибуты HTML</h2>
+                <div class="input_box">
+                    <input type="text" id="mailHTML" placeholder="Почта"  pattern=".*@.*">
+                </div>
+                <div class="input_box">
+                    <input type="text" id="loginHTML" placeholder="Логин" maxlength="16" required>
+                </div>
+                <div class="input_box">
+                    <input type="password" id="passwordHTML" placeholder="Пароль" minlength="8" required>
+                </div>
+                
+
+                <div class="input_box">
+                    <span>Ваш пол</span>
+                    <select required id="selectHTML">
+                        <option value="" >--Ваш пол--</option>
+                        <option value="Мужчина">Мужчина</option>
+                        <option value="Женщина">Женщина</option>
+                        <option value="Другое">Другое</option>
+                    </select>
+                </div>
+                    <br/>
+                <div class="input_box">
+                    <div class="">
+                        <span>Получать уведомления?</span>
+                    </div>
+                    <br>
+                    <div class="rbtns">
+                        <div>
+                            <input type="radio" name="radioGroup1" value="option1">
+                            <span>Да</span>
+                        </div>
+                        
+                        <div>
+                            <input type="radio"  name="radioGroup1" value="option2">
+                            <span>Нет</span>
+                        </div>
+                
+                    </div>
+
+                </div>
+
+                <div class="input_box">
+                    <input type="checkbox" required>
+                    <span> Соглашение <a href="#"> условий пользования</a></span>
+                </div>
+                    <br/>
+                <button type="submit" class="send">Отправить</button>
+            </form>
+        </div>
+        <div>
+            <form action="" class="formJS">
+                <h2>Через JS</h2>
+                <div class="input_box mail">
+                    <input type="text" id="mail" placeholder="Почта">
+                </div>
+                <div class="input_box login">
+                    <input type="text" id="login" placeholder="Логин">
+                </div>
+                <div class="input_box password">
+                    <input type="password" id="password" placeholder="Пароль">
+                </div>
+                
+
+                <div class="input_box robotTest">
+                    <span>Ваш пол</span>
+                    <select id="select" class="select">
+                        <option value="nullIndex">--Ваш пол--</option>
+                        <option value="Мужчина">Мужчина</option>
+                        <option value="Женщина">Женщина</option>
+                        <option value="Другое">Другое</option>
+                    </select>
+                </div>
+
+                <div class="input_box radioButtons">
+                    <div class="rbSpan">
+                       <span>Получать уведомления?</span>
+                    </div>
+                    <div class="rbtns">
+                        <div>
+                            <input type="radio" name="radioGroup2" value="option1">
+                            <span>Да</span>
+                        </div>
+                        
+                        <div>
+                            <input type="radio" name="radioGroup2" value="option2">
+                            <span>Нет</span>
+                        </div>
+                
+                    </div>
+                </div>
+
+                <div class="input_box checkbox">
+                    <input type="checkbox" id="checkbox">
+                    <div class="cbSpan">
+                        <span> Соглашение <a href="#" >условий пользования</a></span>
+                    </div>
+                </div>
+
+                <button type="submit" class="sendJS">Отправить</button>
+            </form>
+        </div>
+       
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
